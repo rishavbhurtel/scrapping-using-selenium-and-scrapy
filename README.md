@@ -1,2 +1,3 @@
 # url-extraction
-i extracted the categories, subcategories and the url of the company from the sit Trust Pilot which is one of the largest public review website for almost everything.
+i extracted the categories, subcategories and the url and the comments of the perticular company from the site trustpilot.com which is one of the largest public review website for almost everything.
+using selenium and scrapy
