@@ -10,7 +10,7 @@ class Pages(scrapy.Spider):
 
     def parse(self, response):
         company_logo = response.xpath('//img[@class="business-unit-profile-summary__image"]/@src').extract_first()
-        company_website = response.xpath("//a[@class='badge-card__section badge-card__section--hoverable company_website']/@href").extract_first()
+        company_website = response.xpath("//a[@class='badge-card__section badge-card__section--hoverable company_website']/@title").extract_first()
         company_name = response.xpath("//span[@class='multi-size-header__big']/text()").extract_first()
         comments = response.xpath("//p[@class='review-content__text']")
         comments = [comment.xpath('.//text()').extract() for comment in comments]
